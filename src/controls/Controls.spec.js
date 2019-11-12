@@ -27,6 +27,11 @@ test('Open button triggers toggle from close to open state', async () => {
 });
 
 // 11. the closed toggle button is disabled if the gate is locked
-
+// test('the closed toggle button is disabled if the gate is locked', () => {
+//     const 
+//     toggleClosedMock = jest.fn();
+//     render(<Controls toggleClosed={toggleClosedMock} locked={false} closed={false} />);
+//     expect(disabled)
+// })
 
 // 12. the locked toggle button is disabled if the gate is open

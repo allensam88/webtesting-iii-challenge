@@ -20,10 +20,11 @@ test('cannot be opened if it is locked', () => {
     expect(toggleLockedMock).not.toHaveBeenCalled();
 });
 
-Test('cannot be locked if it is open', async () => {
-    const toggleLockedMock = jest.fn();
-    render(<Controls toggleLocked={toggleLockedMock} locked={false} closed={false}/>)
-})
+test('cannot be closed if it is locked', () => {
+    const toggleClosedMock = jest.fn();
+    render(<Controls toggleClosed={toggleClosedMock} locked={true} closed={true}/>)
+    expect(toggleClosedMock).not.toHaveBeenCalled();
+});
 
 // 3. shows the controls and display
 test('renders the display', () => {
