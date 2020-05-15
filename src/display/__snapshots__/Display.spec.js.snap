@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays if gate is open and unlocked 1`] = `
+<div
+  class="led green-led"
+>
+  Open
+</div>
+`;
+
+exports[`displays if gate is open and unlocked 2`] = `
+<div
+  class="led green-led"
+>
+  Unlocked
+</div>
+`;
